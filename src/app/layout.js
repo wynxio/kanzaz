@@ -6,23 +6,23 @@ import "./globals.css";
 import { ToastContainer } from "react-toastify";
 import Providers from "./providers";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+// const geistSans = Geist({
+//   variable: "--font-geist-sans",
+//   subsets: ["latin"],
+// });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+// const geistMono = Geist_Mono({
+//   variable: "--font-geist-mono",
+//   subsets: ["latin"],
+// });
 
 export const metadata = {
-  title: "WYNTEES: Buy Todays Trending Tee",
+  title: "Kanzaz LakshaDeep Tours And Travels",
   description:
-    "Get Todays Trending Premium Tee with Free Shipping and Cash On Delivery",
+    "Exclusive LakshaDeep Tours and Travels",
 };
 
-const title = "WynTees : Buy Todays Trending Tee";
+// const title = "WynTees : Buy Todays Trending Tee";
 
 export default function RootLayout({ children }) {
   return (

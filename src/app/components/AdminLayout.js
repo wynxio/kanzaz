@@ -2,13 +2,14 @@
 import React, { useEffect, useState, Suspense } from "react";
 import { Geist, Geist_Mono } from "next/font/google";
 //import "bootstrap/dist/css/bootstrap.min.css";
-import { NavBar } from "./NavBar";
+ 
 import useAppStore from "../store/useStore";
 import { useRouter } from "next/navigation";
 
 
 import "react-toastify/dist/ReactToastify.css";
 import "../Styles/adminpanel.css"
+import Navbar from "./NavBar";
 
 let title = "Wyntees Admin Portal";
 
@@ -32,7 +33,7 @@ export const AdminLayout = ({ children }) => {
         {isLogined && (
           <div>
             
-              <NavBar />
+              <Navbar />
               {children}
              
             
