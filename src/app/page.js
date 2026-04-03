@@ -55,7 +55,7 @@ export async function generateMetadata() {
       url: process.env.NEXT_PUBLIC_SITE_URL,
       images: [
         {
-          url: 'https://www.kanzas.com/kanlogo.png',
+          url: 'https://www.kanzastours.com/kanlogo.png',
           width: 1200,
           height: 630,
           type: "image/jpeg"
@@ -67,7 +67,7 @@ export async function generateMetadata() {
       card: "summary_large_image",
       title,
       description,
-      images: ['https://www.kanzas.com/kanlogo.png'],
+      images: ['https://www.kanzastours.com/kanlogo.png'],
     },
   };
 }
