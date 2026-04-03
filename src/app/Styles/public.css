@@ -1,0 +1,23 @@
+.logoImgHeader {
+  width: auto;
+  height: auto;
+  max-height: 100px;
+  margin-top: 30px;
+}
+.headerBack{
+    background-color: #f08080;
+}
+.cursorPointer{
+  cursor: pointer;
+}
+.ptop50{
+  padding-top:50px;
+}
+.selected-link{
+  color:white;
+}
+.smallThumb{
+  width:auto;
+  height: auto;
+  max-height: 100px;
+}
