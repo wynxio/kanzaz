@@ -63,7 +63,7 @@ export default function RootLayout({ children }) {
 <html lang="en">
 <head>
   <meta charSet="UTF-8"></meta>
-  <title>Coming Soon</title>
+  <title>Kanzas</title>
   <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
 
    
