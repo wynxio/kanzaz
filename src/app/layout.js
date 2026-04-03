@@ -20,6 +20,7 @@ export const metadata = {
   title: "Kanzaz LakshaDeep Tours And Travels",
   description:
     "Exclusive LakshaDeep Tours and Travels",
+   
 };
 
 // const title = "WynTees : Buy Todays Trending Tee";
@@ -74,6 +75,7 @@ export default function RootLayout({ children }) {
 <body>
 
   <div className="coming-soon">
+    <img src="https://www.kanzastours.com/kanlogo.png" style={{maxWidth:'80%'}} />
     <h1>🚀 Coming Soon</h1>
     <p>We are working hard to launch something amazing. Stay tuned!</p>
     <div className="pulse"></div>
