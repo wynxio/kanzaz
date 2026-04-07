@@ -77,7 +77,7 @@ const PackageCard = ({ pkg }) => {
         </div>
 
         <a
-          href={`tel:${pkg.contactNumber.replace(/\s/g, "")}`}
+          style={{cursor:'default'}}
           className="w-full flex items-center justify-center gap-2 bg-[#E8572A]/10 hover:bg-[#E8572A] text-[#E8572A] hover:text-white border border-[#E8572A]/30 hover:border-[#E8572A] text-sm font-bold py-2.5 rounded-xl transition-all duration-200 cursor-pointer whitespace-nowrap"
         >
           <i className="ri-phone-fill"></i>

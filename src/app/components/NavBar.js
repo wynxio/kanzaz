@@ -33,18 +33,11 @@ const Navbar = () => {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3">
           <img
-            src="https://static.readdy.ai/image/c8f58c40e12f1239e28a5ccd626b10b4/67ccda92055b0fe2965d32b6a2974f13.png"
+            src="/kanlogo1.png"
             alt="Kanzas Tour and Travels Logo"
             className="h-12 w-auto object-contain"
           />
-          <div className="flex flex-col leading-tight">
-            <span className={`font-extrabold text-2xl tracking-wide transition-colors duration-300 ${logoTextColor}`} style={{ fontFamily: "'Playfair Display', serif" }}>
-              KANZAS
-            </span>
-            <span className={`text-xs font-medium tracking-widest uppercase transition-colors duration-300 ${subTextColor}`}>
-              Tour &amp; Travels
-            </span>
-          </div>
+          
         </Link>
 
         {/* Desktop Nav */}

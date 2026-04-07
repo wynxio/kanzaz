@@ -8,7 +8,7 @@ const ComingSoon = () => {
       {/* Background Image */}
       <div className="absolute inset-0 w-full h-full">
         <img
-          src="https://readdy.ai/api/search-image?query=dark%20moody%20abstract%20fabric%20texture%20background%20with%20deep%20charcoal%20and%20warm%20amber%20tones%20dramatic%20lighting%20premium%20luxury%20fashion%20brand%20aesthetic%20soft%20folds%20of%20cotton%20material%20with%20subtle%20gradient%20from%20dark%20to%20warm%20elegant%20minimalist%20backdrop&width=1920&height=1080&seq=launch-bg-001&orientation=landscape"
+          src="comingsoon.jpg"
           alt="WynTees Launch Background"
           className="w-full h-full object-cover object-center"
         />
@@ -156,14 +156,7 @@ const ComingSoon = () => {
           >
             <i className="ri-twitter-x-line text-base"></i>
           </a> */}
-          {/* <a
-            href="https://readdy.ai/?ref=logo"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white/30 hover:text-white/70 transition-colors text-xs cursor-pointer whitespace-nowrap"
-          >
-            Web Design
-          </a> */}
+         
         </div>
       </footer>
     </div>

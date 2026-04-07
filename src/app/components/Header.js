@@ -1,141 +1,102 @@
 'use client';
-
-import Link from 'next/link';
-import { useState, useEffect } from 'react';
+import Link from "next/link";
+import { useState, useEffect } from "react";
 import { usePathname } from 'next/navigation';
-import { List } from 'react-bootstrap-icons';
+ 
 
-export default function Header() {
-  const [isScrolled, setIsScrolled] = useState(false);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const pathname = usePathname();
+const Header = () => {
+  const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const location = usePathname();
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    const handleScroll = () => setScrolled(window.scrollY > 50);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Close mobile menu when route changes
-  useEffect(() => {
-    setIsMobileMenuOpen(false);
-  }, [pathname]);
+  const isHome = location === "/";
+  const navBg = scrolled || !isHome ? "bg-white shadow-md" : "bg-transparent";
+  const textColor = scrolled || !isHome ? "text-gray-800" : "text-white";
+  const logoTextColor = scrolled || !isHome ? "text-[#E8572A]" : "text-white";
+  const subTextColor = scrolled || !isHome ? "text-gray-500" : "text-white/80";
 
-  // Prevent body scroll when menu is open
-  useEffect(() => {
-    document.body.style.overflow = isMobileMenuOpen ? 'hidden' : '';
-    return () => {
-      document.body.style.overflow = '';
-    };
-  }, [isMobileMenuOpen]);
-
-  const isActive = (path) => pathname === path;
+  const navLinks = [
+    { label: "Home", path: "/" },
+    { label: "Tour Packages", path: "/packages" },
+    { label: "Contact Us", path: "/contact" },
+  ];
 
   return (
-    <>
-      <header
-        className={`headerBack fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          isScrolled || isMobileMenuOpen
-            ? 'bg-white/95 shadow-md'
-            : 'bg-transparent'
-        }`}
-      >
-        <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-          {/* Logo */}
-          <Link href="/" className="flex-shrink-0">
-            <img
-              src="/logo1.png"
-              alt="WynTees Logo"
-              className="object-contain logoImgHeader"
-            />
-          </Link>
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${navBg}`}>
+      <div className="max-w-7xl mx-auto px-4 md:px-8 py-3 flex items-center justify-between">
+        {/* Logo */}
+        <Link href="/" className="flex items-center gap-3">
+          <img
+            src="/kanlogo1.png"
+            alt="Kanzas Tour and Travels"
+            className="h-12 minh100 w-auto object-contain"
+          />
+          
+        </Link>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-8">
+        {/* Desktop Nav */}
+        <div className="hidden md:flex items-center gap-8">
+          {navLinks.map((link) => (
             <Link
-              href="/"
-              className={`text-sm font-medium transition-colors ${
-                isActive('/') ? 'selected-link' : 'text-gray-700 hover:selected-link'
+              key={link.path}
+              href={link.path}
+              className={`text-sm font-semibold tracking-wide transition-colors duration-200 hover:text-[#E8572A] whitespace-nowrap ${
+                location === link.path ? "text-[#E8572A]" : textColor
               }`}
             >
-              Home
-            </Link>
-            <Link
-              href="/collections"
-              className={`text-sm font-medium transition-colors ${
-                isActive('/collections')
-                  ? 'selected-link'
-                  : 'text-gray-700 hover:selected-link'
-              }`}
-            >
-              Collections
-            </Link>
-            {/* <Link
-              href="/terms"
-              className={`text-sm font-medium transition-colors ${
-                isActive('/terms')
-                  ? 'selected-link'
-                  : 'text-gray-700 hover:selected-link'
-              }`}
-            >
-              Terms of Use
-            </Link> */}
-          </nav>
-
-          {/* Mobile Menu Button */}
-          <button
-            className="md:hidden w-10 h-10 flex items-center justify-center"
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            aria-label={isMobileMenuOpen ? 'Close menu' : 'Open menu'}
-          >
-             {/* <List color='white' size={28} className='cursorPointer'/> */}
-            <i
-              className={`text-2xl transition-transform duration-300 ${
-                isMobileMenuOpen ? 'ri-close-line' : 'ri-menu-line'
-              }`}
-            />
-          </button>
-        </div>
-      </header>
-
-      {/* Mobile Overlay */}
-      <div
-        className={`fixed inset-0 bg-black/50 z-40 md:hidden transition-opacity ${
-          isMobileMenuOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'
-        }`}
-        onClick={() => setIsMobileMenuOpen(false)}
-      />
-
-      {/* Mobile Menu */}
-      <div
-        className={`fixed top-20 right-0 w-72 h-[calc(100vh-5rem)] bg-white z-40 md:hidden shadow-xl transition-transform ${
-          isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
-        }`}
-      >
-        <nav className="flex flex-col p-6">
-          {[
-            { href: '/', label: 'Home', icon: 'ri-home-4-line' },
-            { href: '/collections', label: 'Collections', icon: 'ri-t-shirt-line' },
-           
-          ].map(({ href, label, icon }) => (
-            <Link
-              key={href}
-              href={href}
-              className={`py-4 px-4 rounded-lg font-medium transition-colors ${
-                isActive(href)
-                  ? 'bg-orange-50 text-orange-500'
-                  : 'text-gray-700 hover:bg-gray-50 hover:selected-link'
-              }`}
-            >
-              <i className={`${icon} mr-3`} />
-              {label}
+              {link.label}
             </Link>
           ))}
-        </nav>
+          <Link
+            href="/packages"
+            className="bg-[#E8572A] hover:bg-[#c94820] text-white text-sm font-bold px-6 py-2.5 rounded-full transition-all duration-200 whitespace-nowrap cursor-pointer"
+          >
+            Book Now
+          </Link>
+        </div>
+
+        {/* Mobile Hamburger */}
+        <button
+          className={`md:hidden text-2xl cursor-pointer ${textColor}`}
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Toggle menu"
+        >
+          <i className={menuOpen ? "ri-close-line" : "ri-menu-line"}></i>
+        </button>
       </div>
-    </>
+
+      {/* Mobile Menu */}
+      {menuOpen && (
+        <div className="md:hidden bg-white border-t border-gray-100 px-4 py-4 flex flex-col gap-4">
+          {navLinks.map((link) => (
+            <Link
+              key={link.path}
+              href={link.path}
+              onClick={() => setMenuOpen(false)}
+              className={`text-sm font-semibold text-gray-700 hover:text-[#E8572A] transition-colors ${
+                location === link.path ? "text-[#E8572A]" : ""
+              }`}
+            >
+              {link.label}
+            </Link>
+          ))}
+          <Link
+            href="/packages"
+            onClick={() => setMenuOpen(false)}
+            className="bg-[#E8572A] text-white text-sm font-bold px-6 py-2.5 rounded-full text-center whitespace-nowrap cursor-pointer"
+          >
+            Book Now
+          </Link>
+        </div>
+      )}
+    </nav>
   );
-}
+};
+
+export default Header;

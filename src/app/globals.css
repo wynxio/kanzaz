@@ -1,6 +1,6 @@
-/* @import "tailwindcss";
+ @import "tailwindcss";
 
-:root {
+/*:root {
   --background: #ffffff;
   --foreground: #171717;
 }
@@ -25,17 +25,19 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 } */
 
-
+body {
+  font-family: 'Inter', sans-serif;
+}
  
     body {
-      height: 100vh;
+      /* height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
       background: linear-gradient(135deg, #0d6efd, #6610f2);
       color: white;
       text-align: center;
-      overflow: hidden;
+      overflow: hidden; */
     }
 
     .coming-soon {
@@ -96,4 +98,6 @@ body {
         opacity: 1;
       }
     }
-  
+  .minh100{
+    min-height: 100px;
+  }

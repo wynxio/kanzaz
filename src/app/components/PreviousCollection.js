@@ -1,8 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
-// import { previousTshirts } from '../mocks/previous-tshirts';
-
+ 
 export default function PreviousCollection({ previousProducts,selectedProduct,title = "Previous Drops",subtitle="Explore our past collections",showViewAllButton=true}) {
    const router = useRouter();
   //const [visibleCount, setVisibleCount] = useState(8);
