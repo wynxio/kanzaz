@@ -33,7 +33,7 @@ const PackageCard = ({ pkg }) => {
       {/* Content */}
       <div className="p-5">
         <div className="flex items-start justify-between gap-2 mb-2">
-          <h3 className="font-bold text-gray-800 text-base leading-snug" style={{ fontFamily: "'Playfair Display', serif" }}>
+          <h3 className="font-bold text-gray-800 text-base leading-snug" style={{ fontFamily: "sans-serif" }}>
             {pkg.name}
           </h3>
         </div>

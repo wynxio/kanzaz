@@ -69,7 +69,7 @@ const ContactPage = () => {
             </span>
             <h1
               className="text-4xl md:text-6xl font-extrabold text-white mt-4 mb-4"
-              style={{ fontFamily: "'Playfair Display', serif" }}
+              style={{ fontFamily: "sans-serif" }}
             >
               Contact Us
             </h1>
@@ -89,7 +89,7 @@ const ContactPage = () => {
                 <div>
                   <h2
                     className="text-2xl md:text-3xl font-extrabold text-gray-800 mb-2"
-                    style={{ fontFamily: "'Playfair Display', serif" }}
+                    style={{ fontFamily: "sans-serif" }}
                   >
                     Let&apos;s Plan Your
                     <span className="text-[#E8572A]"> Dream Trip</span>
@@ -208,7 +208,7 @@ const ContactPage = () => {
                 <div className="bg-white rounded-2xl p-8 border border-gray-100">
                   <h3
                     className="text-xl font-extrabold text-gray-800 mb-6"
-                    style={{ fontFamily: "'Playfair Display', serif" }}
+                    style={{ fontFamily: "sans-serif" }}
                   >
                     Send Us a Message
                   </h3>

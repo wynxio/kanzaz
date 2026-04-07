@@ -11,13 +11,19 @@ const slides = [
     desc: "Curated luxury tour packages to India's most pristine tropical destination",
   },
   {
-    image: "/slide2.jpg",
+    image: "/slide3.jpg",
     title: "Luxury Escapes",
     subtitle: "Crafted Just for You",
     desc: "Experience world-class hospitality amidst the untouched beauty of the Arabian Sea",
   },
   {
-    image: "/slide3.jpg",
+    image: "/lak/1.jpg",
+    title: "Adventure Awaits",
+    subtitle: "Dive Into the Deep Blue",
+    desc: "From snorkeling to scuba diving, explore the vibrant marine life of Lakshadweep",
+  },
+  {
+    image: "/lak/2.jpg",
     title: "Adventure Awaits",
     subtitle: "Dive Into the Deep Blue",
     desc: "From snorkeling to scuba diving, explore the vibrant marine life of Lakshadweep",
@@ -59,13 +65,13 @@ const HeroSection = () => {
         </div>
         <h1
           className="text-white font-extrabold text-4xl md:text-6xl lg:text-7xl leading-tight mb-2"
-          style={{ fontFamily: "'Playfair Display', serif" }}
+          style={{ fontFamily: "sans-serif" }}
         >
           {slides[current].title}
         </h1>
         <h2
           className="text-white/90 font-light text-2xl md:text-4xl lg:text-5xl italic mb-6"
-          style={{ fontFamily: "'Playfair Display', serif" }}
+          style={{ fontFamily: "sans-serif" }}
         >
           {slides[current].subtitle}
         </h2>

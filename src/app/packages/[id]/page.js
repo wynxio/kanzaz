@@ -104,7 +104,7 @@ const PackageDetailPage = () => {
                 <div>
                   <h1
                     className="text-2xl md:text-3xl font-extrabold text-gray-800 mb-2"
-                    style={{ fontFamily: "'Playfair Display', serif" }}
+                    style={{ fontFamily: "sans-serif" }}
                   >
                     {pkg.name}
                   </h1>
@@ -356,7 +356,7 @@ const PackageDetailPage = () => {
         <div className="mt-14">
           <h2
             className="text-2xl font-extrabold text-gray-800 mb-6"
-            style={{ fontFamily: "'Playfair Display', serif" }}
+            style={{ fontFamily: "sans-serif" }}
           >
             You May Also Like
           </h2>

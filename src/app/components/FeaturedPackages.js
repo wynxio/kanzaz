@@ -19,7 +19,7 @@ const FeaturedPackages = () => {
             </span>
             <h2
               className="text-3xl md:text-5xl font-extrabold text-gray-800 mt-4"
-              style={{ fontFamily: "'Playfair Display', serif" }}
+              style={{ fontFamily: "sans-serif" }}
             >
               Popular Lakshadweep
               <span className="text-[#E8572A]"> Getaways</span>

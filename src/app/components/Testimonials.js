@@ -35,7 +35,7 @@ const Testimonials = () => {
           </span>
           <h2
             className="text-3xl md:text-5xl font-extrabold text-white mt-4 mb-4"
-            style={{ fontFamily: "'Playfair Display', serif" }}
+            style={{ fontFamily: "sans-serif" }}
           >
             What Our Travelers
             <span className="text-[#E8572A]"> Say</span>

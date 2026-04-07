@@ -46,7 +46,7 @@ const PackagesPage = () => {
             </span>
             <h1
               className="text-4xl md:text-6xl font-extrabold text-white mt-4 mb-4"
-              style={{ fontFamily: "'Playfair Display', serif" }}
+              style={{ fontFamily: "sans-serif" }}
             >
               Our Tour Packages
             </h1>
@@ -120,7 +120,7 @@ const PackagesPage = () => {
           <div className="max-w-4xl mx-auto px-4 text-center">
             <h2
               className="text-3xl md:text-4xl font-extrabold text-white mb-4"
-              style={{ fontFamily: "'Playfair Display', serif" }}
+              style={{ fontFamily: "sans-serif" }}
             >
               Can&apos;t Find Your Perfect Package?
             </h2>

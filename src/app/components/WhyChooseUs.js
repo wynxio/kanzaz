@@ -47,7 +47,7 @@ const WhyChooseUs = () => {
           </span>
           <h2
             className="text-3xl md:text-5xl font-extrabold text-gray-800 mt-4 mb-4"
-            style={{ fontFamily: "'Playfair Display', serif" }}
+            style={{ fontFamily: "sans-serif" }}
           >
             Your Trusted Lakshadweep
             <span className="text-[#E8572A]"> Travel Partner</span>
