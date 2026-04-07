@@ -1,7 +1,6 @@
 'use client';
 import Link from "next/link";
-
- 
+import SocialMedia from "./SocialMedia";
 
 const Footer = () => {
   
@@ -24,22 +23,8 @@ const Footer = () => {
             <p className="text-gray-400 text-sm leading-relaxed mb-5">
               Your trusted gateway to the pristine paradise of Lakshadweep Islands. Creating unforgettable memories since 2010.
             </p>
-            <div className="flex gap-3">
-              {[
-                { icon: "ri-facebook-fill", href: "#" },
-                { icon: "ri-instagram-line", href: "#" },
-                { icon: "ri-whatsapp-line", href: "#" },
-                { icon: "ri-youtube-fill", href: "#" },
-              ].map((s) => (
-                <a
-                  key={s.icon}
-                  href={s.href}
-                  className="w-9 h-9 flex items-center justify-center rounded-full border border-gray-600 text-gray-400 hover:border-[#E8572A] hover:text-[#E8572A] transition-colors cursor-pointer"
-                >
-                  <i className={s.icon}></i>
-                </a>
-              ))}
-            </div>
+            <SocialMedia itemClass={"w-9 h-9 flex items-center justify-center rounded-full border border-gray-600 text-gray-400 hover:border-[#E8572A] hover:text-[#E8572A] transition-colors cursor-pointer"}></SocialMedia>
+            
           </div>
 
           {/* Quick Links */}

@@ -1,6 +1,8 @@
 "use client";
 import { useState } from "react";
 import { PublicLayout } from "../components/PublicLayout";
+import SocialMedia from "../components/SocialMedia";
+
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -161,7 +163,8 @@ const ContactPage = () => {
                   <p className="font-bold text-gray-800 text-sm mb-3">
                     Follow Us
                   </p>
-                  <div className="flex gap-3">
+                  <SocialMedia itemClass={"w-10 h-10 flex items-center justify-center rounded-xl bg-gray-100 text-gray-600 hover:bg-[#E8572A] hover:text-white transition-colors cursor-pointer"}></SocialMedia>
+                  {/* <div className="flex gap-3">
                     <a
                       href="#"
                       title="Facebook"
@@ -195,22 +198,8 @@ const ContactPage = () => {
                       <i className="ri-whatsapp-line"></i>
                     </a>
 
-                    {/* {[
-                      { icon: "ri-facebook-fill", label: "Facebook" },
-                      { icon: "ri-instagram-line", label: "Instagram" },
-                      { icon: "ri-whatsapp-line", label: "WhatsApp" },
-                      { icon: "ri-youtube-fill", label: "YouTube" },
-                    ].map((s) => (
-                      <a
-                        key={s.label}
-                        href="#"
-                        title={s.label}
-                        className="w-10 h-10 flex items-center justify-center rounded-xl bg-gray-100 text-gray-600 hover:bg-[#E8572A] hover:text-white transition-colors cursor-pointer"
-                      >
-                        <i className={s.icon}></i>
-                      </a>
-                    ))} */}
-                  </div>
+                    
+                  </div> */}
                 </div>
               </div>
 
