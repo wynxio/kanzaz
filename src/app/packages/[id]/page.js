@@ -68,7 +68,7 @@ const PackageDetailPage = () => {
               <img
                 src={allImages[selectedImage]}
                 alt={pkg.name}
-                className="w-full h-full object-cover object-top"
+                className="w-full h-full object-cover object-center"
               />
               {pkg.badge && (
                 <span className="absolute top-4 left-4 bg-[#E8572A] text-white text-xs font-bold px-3 py-1.5 rounded-full">
@@ -92,7 +92,7 @@ const PackageDetailPage = () => {
                   <img
                     src={img}
                     alt=""
-                    className="w-full h-full object-cover object-top"
+                    className="w-full h-full object-cover object-center"
                   />
                 </button>
               ))}
@@ -374,7 +374,7 @@ const PackageDetailPage = () => {
                     <img
                       src={p.image}
                       alt={p.name}
-                      className="w-full h-full object-cover object-top"
+                      className="w-full h-full object-cover object-center"
                     />
                   </div>
                   <div className="p-4">

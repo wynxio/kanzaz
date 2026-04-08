@@ -13,7 +13,7 @@ const PackageCard = ({ pkg }) => {
         <img
           src={pkg.image}
           alt={pkg.name}
-          className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+          className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
         />
         {pkg.badge && (
           <span className="absolute top-3 left-3 bg-[#E8572A] text-white text-xs font-bold px-3 py-1 rounded-full">

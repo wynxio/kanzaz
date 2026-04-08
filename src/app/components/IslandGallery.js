@@ -1,4 +1,5 @@
 const galleryImages = [
+  { src: "/gl/33.jpg", label: "", span: "col-span-2 row-span-2" },
   { src: "/gl/1.jpg", label: "Agatti Island", span: "col-span-2 row-span-2" },
   { src: "/gl/2.jpg", label: "Coral Reefs", span: "" },
   { src: "/gl/3.jpg", label: "Bangaram Resort", span: "" },
