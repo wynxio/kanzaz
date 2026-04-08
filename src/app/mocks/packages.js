@@ -7,7 +7,7 @@ export const packages= [
     duration: "6 Days / 5 Nights",
     price: 32500,
     originalPrice: 40000,
-    image: "/gl/21.jpg",
+    image: "/gl/32.jpg",
     gallery: [
       "/gl/22.jpg",
       "/gl/23.jpg",
@@ -200,6 +200,85 @@ export const packages= [
     rating: 4.7,
     reviews: 98,
     category: "Cultural & Heritage"
+  },
+   {
+    id: "Agatti-3n4d",
+    name: "Agatti Island \u2013 3 Nights / 4 Days",
+    duration: "4 Days / 3 Nights",
+    price: 27500,
+    originalPrice: 40000,
+    image: "/gl/37.jpg",
+    gallery: [
+      "/gl/19.jpg",
+      "/gl/20.jpg",
+      "/gl/21.jpg",
+      "/gl/22.jpg",
+     ],
+    description: "Explore the breathtaking beauty of Agatti Island on this immersive 3-night, 4-day journey. From the serene Koomel Beach lagoon to the magical overnight stay at uninhabited Cheriyam Island under a canopy of stars, this package offers an authentic Lakshadweep experience like no other. Includes local sightseeing, sandbank excursions, kayaking, snorkeling, and a glass-bottom boat ride.",
+    highlights: [
+      "Overnight camp stay at Cheriyam Island",
+      "Sandbank & small islet boat excursion",
+      "Lighthouse viewpoint visit",
+      "Kayaking & snorkeling in the lagoon",
+      "Glass-bottom boat ride",
+      "Koomel Beach lagoon experience",
+      "Cultural interaction evening"
+    ],
+    inclusions: [
+      "Lakshadweep entry / visiting permit",
+      "Up & down ship tickets",
+      "AC room accommodation at Kalpeni",
+      "Camp-style overnight stay at Cheriyam",
+      "All meals (breakfast, lunch, dinner)",
+      "Kayaking & snorkeling (one time, subject to weather)",
+      "Glass-bottom boat ride (one time)",
+      "Local sightseeing + lighthouse visit",
+      "Cheriyam trip (full day + overnight)"
+    ],
+    exclusions: [
+      "Personal expenses",
+      "Alcoholic beverages",
+      "Travel insurance",
+      "Additional water sports activities",
+      "Camera charges at monuments"
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: "Arrival at Kalpeni",
+        description: "Arrival at Kalpeni by ship. Meet & greet at jetty and transfer to AC accommodation. Welcome drink & check-in. Evening free at Koomel Beach / lagoon side. Dinner & overnight stay at Kalpeni."
+      },
+      {
+        day: 2,
+        title: "Kalpeni Local Sightseeing",
+        description: "Breakfast. Island tour covering the village area, main jetty side, mosque surroundings, and local life. Lighthouse viewpoint visit. Lunch. Evening lagoon time / beach walk. Dinner & overnight stay at Kalpeni."
+      },
+      {
+        day: 3,
+        title: "Small Islands & Sandbanks Excursion",
+        description: "Breakfast. Full-day boat trip to nearby small islets and sandbanks around Kalpeni. Swimming, lagoon experience and photo points. Packed / island lunch. Return to Kalpeni by evening. Dinner & overnight stay at Kalpeni."
+      },
+      {
+        day: 4,
+        title: "Cheriyam Island \u2013 Full Day & Night Stay",
+        description: "Breakfast. Transfer by boat to Cheriyam Island. Full-day stay at Cheriyam: beach relaxation, lagoon swimming, shore walk. Lunch at Cheriyam. Overnight camp stay at Cheriyam (camp cot / tent as arranged). Dinner & night stay under the stars at Cheriyam."
+      },
+      {
+        day: 5,
+        title: "Cheriyam Sunrise & Return to Kalpeni",
+        description: "Sunrise view at Cheriyam. Breakfast at Cheriyam. Free time for photography / lagoon dip. Return boat transfer to Kalpeni around late morning / noon. Lunch at Kalpeni. Evening cultural interaction / free time at beach. Dinner & final night stay at Kalpeni."
+      },
+      {
+        day: 6,
+        title: "Departure",
+        description: "Breakfast. Check-out. Transfer to ship for return journey."
+      }
+    ],
+    contactNumber: "(+91) 94478 68909",
+    badge: "Best Seller",
+    rating: 4.8,
+    reviews: 124,
+    category: "Beach & Adventure"
   },
   // {
   //   id: "kalpeni-coral",
