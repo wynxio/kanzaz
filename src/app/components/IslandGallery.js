@@ -51,10 +51,9 @@ const IslandGallery = () => {
         {/* Masonry layout using CSS columns */}
         <div
           style={{
-            columnCount: 4,
             columnGap: '12px',
           }}
-          className="md:[column-count:4] [column-count:2]"
+          className="[column-count:1] sm:[column-count:2] md:[column-count:4]"
         >
           {galleryImages.map((img, idx) => (
             <div
