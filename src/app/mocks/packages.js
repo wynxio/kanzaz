@@ -1,6 +1,4 @@
- 
-
-export const packages= [
+export const packages = [
   {
     id: "kalpeni-5n6d",
     name: "Kalpeni Island \u2013 5 Nights / 6 Days",
@@ -8,13 +6,9 @@ export const packages= [
     price: 32500,
     originalPrice: 40000,
     image: "/gl/32.jpg",
-    gallery: [
-      "/gl/22.jpg",
-      "/gl/23.jpg",
-      "/gl/24.jpg",
-      "/gl/25.jpg",
-     ],
-    description: "Explore the breathtaking beauty of Kalpeni Island on this immersive 5-night, 6-day journey. From the serene Koomel Beach lagoon to the magical overnight stay at uninhabited Cheriyam Island under a canopy of stars, this package offers an authentic Lakshadweep experience like no other. Includes local sightseeing, sandbank excursions, kayaking, snorkeling, and a glass-bottom boat ride.",
+    gallery: ["/gl/22.jpg", "/gl/23.jpg", "/gl/24.jpg", "/gl/25.jpg"],
+    description:
+      "Explore the breathtaking beauty of Kalpeni Island on this immersive 5-night, 6-day journey. From the serene Koomel Beach lagoon to the magical overnight stay at uninhabited Cheriyam Island under a canopy of stars, this package offers an authentic Lakshadweep experience like no other. Includes local sightseeing, sandbank excursions, kayaking, snorkeling, and a glass-bottom boat ride.",
     highlights: [
       "Overnight camp stay at Cheriyam Island",
       "Sandbank & small islet boat excursion",
@@ -22,7 +16,7 @@ export const packages= [
       "Kayaking & snorkeling in the lagoon",
       "Glass-bottom boat ride",
       "Koomel Beach lagoon experience",
-      "Cultural interaction evening"
+      "Cultural interaction evening",
     ],
     inclusions: [
       "Lakshadweep entry / visiting permit",
@@ -33,52 +27,58 @@ export const packages= [
       "Kayaking & snorkeling (one time, subject to weather)",
       "Glass-bottom boat ride (one time)",
       "Local sightseeing + lighthouse visit",
-      "Cheriyam trip (full day + overnight)"
+      "Cheriyam trip (full day + overnight)",
     ],
     exclusions: [
       "Personal expenses",
       "Alcoholic beverages",
       "Travel insurance",
       "Additional water sports activities",
-      "Camera charges at monuments"
+      "Camera charges at monuments",
     ],
     itinerary: [
       {
         day: 1,
         title: "Arrival at Kalpeni",
-        description: "Arrival at Kalpeni by ship. Meet & greet at jetty and transfer to AC accommodation. Welcome drink & check-in. Evening free at Koomel Beach / lagoon side. Dinner & overnight stay at Kalpeni."
+        description:
+          "Arrival at Kalpeni by ship. Meet & greet at jetty and transfer to AC accommodation. Welcome drink & check-in. Evening free at Koomel Beach / lagoon side. Dinner & overnight stay at Kalpeni.",
       },
       {
         day: 2,
         title: "Kalpeni Local Sightseeing",
-        description: "Breakfast. Island tour covering the village area, main jetty side, mosque surroundings, and local life. Lighthouse viewpoint visit. Lunch. Evening lagoon time / beach walk. Dinner & overnight stay at Kalpeni."
+        description:
+          "Breakfast. Island tour covering the village area, main jetty side, mosque surroundings, and local life. Lighthouse viewpoint visit. Lunch. Evening lagoon time / beach walk. Dinner & overnight stay at Kalpeni.",
       },
       {
         day: 3,
         title: "Small Islands & Sandbanks Excursion",
-        description: "Breakfast. Full-day boat trip to nearby small islets and sandbanks around Kalpeni. Swimming, lagoon experience and photo points. Packed / island lunch. Return to Kalpeni by evening. Dinner & overnight stay at Kalpeni."
+        description:
+          "Breakfast. Full-day boat trip to nearby small islets and sandbanks around Kalpeni. Swimming, lagoon experience and photo points. Packed / island lunch. Return to Kalpeni by evening. Dinner & overnight stay at Kalpeni.",
       },
       {
         day: 4,
         title: "Cheriyam Island \u2013 Full Day & Night Stay",
-        description: "Breakfast. Transfer by boat to Cheriyam Island. Full-day stay at Cheriyam: beach relaxation, lagoon swimming, shore walk. Lunch at Cheriyam. Overnight camp stay at Cheriyam (camp cot / tent as arranged). Dinner & night stay under the stars at Cheriyam."
+        description:
+          "Breakfast. Transfer by boat to Cheriyam Island. Full-day stay at Cheriyam: beach relaxation, lagoon swimming, shore walk. Lunch at Cheriyam. Overnight camp stay at Cheriyam (camp cot / tent as arranged). Dinner & night stay under the stars at Cheriyam.",
       },
       {
         day: 5,
         title: "Cheriyam Sunrise & Return to Kalpeni",
-        description: "Sunrise view at Cheriyam. Breakfast at Cheriyam. Free time for photography / lagoon dip. Return boat transfer to Kalpeni around late morning / noon. Lunch at Kalpeni. Evening cultural interaction / free time at beach. Dinner & final night stay at Kalpeni."
+        description:
+          "Sunrise view at Cheriyam. Breakfast at Cheriyam. Free time for photography / lagoon dip. Return boat transfer to Kalpeni around late morning / noon. Lunch at Kalpeni. Evening cultural interaction / free time at beach. Dinner & final night stay at Kalpeni.",
       },
       {
         day: 6,
         title: "Departure",
-        description: "Breakfast. Check-out. Transfer to ship for return journey."
-      }
+        description:
+          "Breakfast. Check-out. Transfer to ship for return journey.",
+      },
     ],
     contactNumber: "(+91) 94478 68909",
     badge: "Best Seller",
     rating: 4.8,
     reviews: 124,
-    category: "Beach & Adventure"
+    category: "Beach & Adventure",
   },
   // {
   //   id: "agatti-paradise",
@@ -148,28 +148,62 @@ export const packages= [
     price: 18500,
     originalPrice: 22000,
     image: "/gl/27.jpg",
-    gallery: [
-      "/gl/28.jpg",
-      "/gl/29.jpg",
-      "/gl/30.jpg",
-      "/gl/31.jpg",
-     ],
-    
-    description: "Discover Kavaratti, the capital of Lakshadweep, with its stunning lagoon, cultural heritage, and vibrant marine life. This package combines cultural exploration with water adventures, offering a perfect blend of history and natural beauty.",
-    highlights: ["Lagoon water sports", "Marine aquarium visit", "Cultural heritage tour", "Local cuisine experience", "Sunset cruise"],
-    inclusions: ["Return ship/flight from Kochi", "3 nights accommodation", "Breakfast & dinner", "Lagoon water sports", "Aquarium entry", "Local sightseeing"],
-    exclusions: ["Lunch", "Personal expenses", "Camera fees", "Optional activities"],
+    gallery: ["/gl/28.jpg", "/gl/29.jpg", "/gl/30.jpg", "/gl/31.jpg"],
+
+    description:
+      "Discover Kavaratti, the capital of Lakshadweep, with its stunning lagoon, cultural heritage, and vibrant marine life. This package combines cultural exploration with water adventures, offering a perfect blend of history and natural beauty.",
+    highlights: [
+      "Lagoon water sports",
+      "Marine aquarium visit",
+      "Cultural heritage tour",
+      "Local cuisine experience",
+      "Sunset cruise",
+    ],
+    inclusions: [
+      "Return ship/flight from Kochi",
+      "3 nights accommodation",
+      "Breakfast & dinner",
+      "Lagoon water sports",
+      "Aquarium entry",
+      "Local sightseeing",
+    ],
+    exclusions: [
+      "Lunch",
+      "Personal expenses",
+      "Camera fees",
+      "Optional activities",
+    ],
     itinerary: [
-      { day: 1, title: "Arrive at Kavaratti", description: "Arrive by ship/flight, check-in, visit the famous Ujra Mosque, evening lagoon walk." },
-      { day: 2, title: "Marine & Cultural Tour", description: "Visit Marine Aquarium, Water Sports Complex, local market, traditional craft workshop." },
-      { day: 3, title: "Lagoon Adventure", description: "Full day lagoon water sports - kayaking, snorkeling, glass-bottom boat, sunset cruise." },
-      { day: 4, title: "Departure Day", description: "Morning leisure, local souvenir shopping, transfer for departure." }
+      {
+        day: 1,
+        title: "Arrive at Kavaratti",
+        description:
+          "Arrive by ship/flight, check-in, visit the famous Ujra Mosque, evening lagoon walk.",
+      },
+      {
+        day: 2,
+        title: "Marine & Cultural Tour",
+        description:
+          "Visit Marine Aquarium, Water Sports Complex, local market, traditional craft workshop.",
+      },
+      {
+        day: 3,
+        title: "Lagoon Adventure",
+        description:
+          "Full day lagoon water sports - kayaking, snorkeling, glass-bottom boat, sunset cruise.",
+      },
+      {
+        day: 4,
+        title: "Departure Day",
+        description:
+          "Morning leisure, local souvenir shopping, transfer for departure.",
+      },
     ],
     contactNumber: "(+91) 94478 68909",
     badge: "Budget Friendly",
     rating: 4.6,
     reviews: 156,
-    category: "Cultural & Adventure"
+    category: "Cultural & Adventure",
   },
   {
     id: "minicoy-lighthouse",
@@ -183,46 +217,87 @@ export const packages= [
       "/lak/mini/minicoy_3.jpg",
       "/lak/mini/minicoy_4.jpg",
       "/lak/mini/minicoy_5.jpg",
-     ],
-    description: "Minicoy, the southernmost island of Lakshadweep, offers a unique cultural experience with its distinct Maldivian heritage. Visit the iconic 19th-century lighthouse, witness traditional Lava dance, and explore the stunning lagoon.",
-    highlights: ["Historic lighthouse visit", "Traditional Lava dance show", "Tuna canning factory tour", "Lagoon snorkeling", "Cultural village walk"],
-    inclusions: ["Return airfare from Kochi", "4 nights accommodation", "All meals", "Lighthouse entry", "Cultural show", "Snorkeling gear"],
-    exclusions: ["Personal expenses", "Alcoholic beverages", "Travel insurance", "Tips & gratuities"],
+    ],
+    description:
+      "Minicoy, the southernmost island of Lakshadweep, offers a unique cultural experience with its distinct Maldivian heritage. Visit the iconic 19th-century lighthouse, witness traditional Lava dance, and explore the stunning lagoon.",
+    highlights: [
+      "Historic lighthouse visit",
+      "Traditional Lava dance show",
+      "Tuna canning factory tour",
+      "Lagoon snorkeling",
+      "Cultural village walk",
+    ],
+    inclusions: [
+      "Return airfare from Kochi",
+      "4 nights accommodation",
+      "All meals",
+      "Lighthouse entry",
+      "Cultural show",
+      "Snorkeling gear",
+    ],
+    exclusions: [
+      "Personal expenses",
+      "Alcoholic beverages",
+      "Travel insurance",
+      "Tips & gratuities",
+    ],
     itinerary: [
-      { day: 1, title: "Welcome to Minicoy", description: "Arrive at Agatti, transfer to Minicoy by boat, check-in, evening cultural orientation." },
-      { day: 2, title: "Lighthouse & Heritage", description: "Visit the iconic 19th-century lighthouse, tuna canning factory, traditional village walk." },
-      { day: 3, title: "Lagoon Day", description: "Full day at the stunning lagoon - snorkeling, swimming, beach volleyball, sunset photography." },
-      { day: 4, title: "Cultural Immersion", description: "Traditional Lava dance performance, local cooking class, craft workshop, farewell dinner." },
-      { day: 5, title: "Departure", description: "Morning leisure, checkout, boat transfer to Agatti, departure flight." }
+      {
+        day: 1,
+        title: "Welcome to Minicoy",
+        description:
+          "Arrive at Agatti, transfer to Minicoy by boat, check-in, evening cultural orientation.",
+      },
+      {
+        day: 2,
+        title: "Lighthouse & Heritage",
+        description:
+          "Visit the iconic 19th-century lighthouse, tuna canning factory, traditional village walk.",
+      },
+      {
+        day: 3,
+        title: "Lagoon Day",
+        description:
+          "Full day at the stunning lagoon - snorkeling, swimming, beach volleyball, sunset photography.",
+      },
+      {
+        day: 4,
+        title: "Cultural Immersion",
+        description:
+          "Traditional Lava dance performance, local cooking class, craft workshop, farewell dinner.",
+      },
+      {
+        day: 5,
+        title: "Departure",
+        description:
+          "Morning leisure, checkout, boat transfer to Agatti, departure flight.",
+      },
     ],
     contactNumber: "(+91) 94478 68909",
     badge: "Cultural Pick",
     rating: 4.7,
     reviews: 98,
-    category: "Cultural & Heritage"
+    category: "Cultural & Heritage",
   },
-   {
+  {
     id: "Agatti-3n4d",
     name: "Agatti Island \u2013 3 Nights / 4 Days",
     duration: "4 Days / 3 Nights",
     price: 27500,
     originalPrice: 40000,
     image: "/gl/37.jpg",
-    gallery: [
-      "/gl/19.jpg",
-      "/gl/20.jpg",
-      "/gl/21.jpg",
-      "/gl/22.jpg",
-     ],
-    description: "Explore the breathtaking beauty of Agatti Island on this immersive 3-night, 4-day journey. From the serene Koomel Beach lagoon to the magical overnight stay at uninhabited Cheriyam Island under a canopy of stars, this package offers an authentic Lakshadweep experience like no other. Includes local sightseeing, sandbank excursions, kayaking, snorkeling, and a glass-bottom boat ride.",
+    gallery: ["/gl/19.jpg", "/gl/20.jpg", "/gl/21.jpg", "/gl/22.jpg"],
+    description:
+      "Explore the breathtaking beauty of Agatti Island on this immersive 3-night, 4-day journey. From the serene Andan beach and Lagoon beach to the magical overnight stay at uninhabited Kalpitti island under a canopy of stars, this package offers an authentic Lakshadweep experience like no other. Includes local sightseeing, sandbank excursions, kayaking, snorkeling, and a glass-bottom boat ride.",
     highlights: [
-      "Overnight camp stay at Cheriyam Island",
+      "Kalpitti Island Visiting ",
       "Sandbank & small islet boat excursion",
-      "Lighthouse viewpoint visit",
+      "Andan beach, Lagoon beach Visiting",
       "Kayaking & snorkeling in the lagoon",
       "Glass-bottom boat ride",
-      "Koomel Beach lagoon experience",
-      "Cultural interaction evening"
+      "Dolphin watching",
+      "Cultural interaction evening",
+      "Scuba Diving"
     ],
     inclusions: [
       "Lakshadweep entry / visiting permit",
@@ -233,52 +308,58 @@ export const packages= [
       "Kayaking & snorkeling (one time, subject to weather)",
       "Glass-bottom boat ride (one time)",
       "Local sightseeing + lighthouse visit",
-      "Cheriyam trip (full day + overnight)"
+      "Cheriyam trip (full day + overnight)",
     ],
     exclusions: [
       "Personal expenses",
       "Alcoholic beverages",
       "Travel insurance",
       "Additional water sports activities",
-      "Camera charges at monuments"
+      "Camera charges at monuments",
     ],
     itinerary: [
       {
         day: 1,
         title: "Arrival at Kalpeni",
-        description: "Arrival at Kalpeni by ship. Meet & greet at jetty and transfer to AC accommodation. Welcome drink & check-in. Evening free at Koomel Beach / lagoon side. Dinner & overnight stay at Kalpeni."
+        description:
+          "Arrival at Kalpeni by ship. Meet & greet at jetty and transfer to AC accommodation. Welcome drink & check-in. Evening free at Koomel Beach / lagoon side. Dinner & overnight stay at Kalpeni.",
       },
       {
         day: 2,
         title: "Kalpeni Local Sightseeing",
-        description: "Breakfast. Island tour covering the village area, main jetty side, mosque surroundings, and local life. Lighthouse viewpoint visit. Lunch. Evening lagoon time / beach walk. Dinner & overnight stay at Kalpeni."
+        description:
+          "Breakfast. Island tour covering the village area, main jetty side, mosque surroundings, and local life. Lighthouse viewpoint visit. Lunch. Evening lagoon time / beach walk. Dinner & overnight stay at Kalpeni.",
       },
       {
         day: 3,
         title: "Small Islands & Sandbanks Excursion",
-        description: "Breakfast. Full-day boat trip to nearby small islets and sandbanks around Kalpeni. Swimming, lagoon experience and photo points. Packed / island lunch. Return to Kalpeni by evening. Dinner & overnight stay at Kalpeni."
+        description:
+          "Breakfast. Full-day boat trip to nearby small islets and sandbanks around Kalpeni. Swimming, lagoon experience and photo points. Packed / island lunch. Return to Kalpeni by evening. Dinner & overnight stay at Kalpeni.",
       },
       {
         day: 4,
         title: "Cheriyam Island \u2013 Full Day & Night Stay",
-        description: "Breakfast. Transfer by boat to Cheriyam Island. Full-day stay at Cheriyam: beach relaxation, lagoon swimming, shore walk. Lunch at Cheriyam. Overnight camp stay at Cheriyam (camp cot / tent as arranged). Dinner & night stay under the stars at Cheriyam."
+        description:
+          "Breakfast. Transfer by boat to Cheriyam Island. Full-day stay at Cheriyam: beach relaxation, lagoon swimming, shore walk. Lunch at Cheriyam. Overnight camp stay at Cheriyam (camp cot / tent as arranged). Dinner & night stay under the stars at Cheriyam.",
       },
       {
         day: 5,
         title: "Cheriyam Sunrise & Return to Kalpeni",
-        description: "Sunrise view at Cheriyam. Breakfast at Cheriyam. Free time for photography / lagoon dip. Return boat transfer to Kalpeni around late morning / noon. Lunch at Kalpeni. Evening cultural interaction / free time at beach. Dinner & final night stay at Kalpeni."
+        description:
+          "Sunrise view at Cheriyam. Breakfast at Cheriyam. Free time for photography / lagoon dip. Return boat transfer to Kalpeni around late morning / noon. Lunch at Kalpeni. Evening cultural interaction / free time at beach. Dinner & final night stay at Kalpeni.",
       },
       {
         day: 6,
         title: "Departure",
-        description: "Breakfast. Check-out. Transfer to ship for return journey."
-      }
+        description:
+          "Breakfast. Check-out. Transfer to ship for return journey.",
+      },
     ],
     contactNumber: "(+91) 94478 68909",
     badge: "Best Seller",
     rating: 4.8,
     reviews: 124,
-    category: "Beach & Adventure"
+    category: "Beach & Adventure",
   },
   // {
   //   id: "kalpeni-coral",
@@ -344,4 +425,3 @@ export const packages= [
   //   category: "Multi-Island Circuit"
   // }
 ];
-
